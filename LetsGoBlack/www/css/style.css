@@ -9,6 +9,32 @@
 
 }
 
+.login-background {
+    background-image: url("../img/loginbackground.jpg");
+    background-size: cover;
+    background-color: #384729;
+    background-repeat: no-repeat;
+
+}
+
+label { 
+margin-top: 500px;
+color: #B4886B;
+ padding: padding-center;
+ font-weight: bold; 
+width: 350px; 
+float: right;
+margin: 20px;
+}
+
+input, textarea {
+top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 8px 12px;
+    outline: 0;
+}
+
 .btn{
      margin: 20px;
      width:118px;
