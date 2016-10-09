@@ -11,9 +11,15 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
   // Initiate the user service with your UserApp App Id
   // https://help.userapp.io/customer/portal/articles/1322336-how-do-i-find-my-app-id-
   user.init({ appId: '57f8123f99c8b' });
-
   $ionicPlatform.ready(function() {
-    if(window.StatusBar) {
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    if (window.cordova && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      cordova.plugins.Keyboard.disableScroll(true);
+
+    }
+    if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
@@ -55,56 +61,62 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
       }
     })
 
-    // setup an abstract state for the tabs directive
-    .state('tab', {
-      url: "/tab",
-      abstract: true,
-      templateUrl: "templates/tabs.html"
-    })
+.state('app', {
+    url: '/app',
+    abstract: true,
+    templateUrl: 'templates/menu.html',
+    controller: 'AppCtrl'
+  })
 
-    // Each tab has its own nav history stack:
-
-    .state('tab.dash', {
-      url: '/dash',
+    // Trip setup
+    .state('app.trip-setup', {
+      url: '/trip-setup',
       views: {
-        'tab-dash': {
-          templateUrl: 'templates/tab-dash.html',
-          controller: 'DashCtrl'
+        'menuContent': {
+          templateUrl: 'templates/trip-setup.html',
+          controller: 'TripCtrl'
         }
       }
     })
 
-    .state('tab.friends', {
-      url: '/friends',
+    // Selected Trip
+    .state('app.selected-trip', {
+      url: '/selected-trip',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
-        }
-      }
-    })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
-      views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
+        'menuContent': {
+          templateUrl: 'templates/selected-trip.html',
+          controller: 'TripCtrl'
         }
       }
     })
 
-    .state('tab.account', {
-      url: '/account',
+    // Selected Stop
+    .state('app.selected-stop', {
+      url: '/selected-stop',
       views: {
-        'tab-account': {
-          templateUrl: 'templates/tab-account.html',
-          controller: 'AccountCtrl'
+        'menuContent': {
+          templateUrl: 'templates/selected-stop.html',
+          controller: 'TripCtrl'
         }
       }
     })
+
+    // Selected Stop Transaction
+    .state('app.stop-transaction', {
+      url: '/stop-transaction',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/selected-trip.html',
+          controller: 'TripCtrl'
+        }
+      }
+    })
+
+
+   
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/startup');
+  $urlRouterProvider.otherwise('/app/trip-setup');
 
 });
 
