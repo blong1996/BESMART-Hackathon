@@ -2,21 +2,39 @@
   <ion-view view-title="Let's Go Black">
     <ion-content class="start-background">
       <div class="padding" style="text-align: center; padding-top: 60%;">
+        <img src="../img/logo.png" style="width:304px;height:148px;">
+
         <div class="list">
           <label class="item item-input">
             <input type="text" placeholder="STARTING LOCATION">
           </label>
+
+          <div class="item range range-positive">
+<p>Max Distance (Miles)<br></p>
+
+
+            <i class="icon test"></i>
+            <input type="range" name="volume" min="0" max="100" value="33">
+            <i class="icon test2"></i>
+
+          </div>
+
+
           <label class="item item-input">
-            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="ROAD TRIP THEME KEYWORDS">
           </label>
-          <label class="item item-input">
-            <textarea placeholder="Comments"></textarea>
-          </label>
-        </div>
+          </div>
+
+        <a href="#/selected-trip"> <button class="button button-assertive btn">
+          LOGIN
+        </button> </a>
+
       </div>
+
+    </ion-content>
+  </ion-view>
 
   <div class="bar bar-footer bar-assertive" ng-show="error">
     <div class="title">{{ error.message }}</div>
   </div>
-  </ion-content>
-  </ion-view>
+

@@ -40,3 +40,9 @@ top: 0;
      width:118px;
      height:27px;
 }
+
+.test:before {
+  content: "0"; }
+
+  .test2:before {
+    content: "2K"; }
