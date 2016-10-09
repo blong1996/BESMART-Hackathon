@@ -1,16 +1,19 @@
+<body class="start-background">
 <form ua-login>
   <ion-view title="Let's Go Black">
-    <ion-content>
+    <ion-content class="start-background">
       <div class="padding" style="text-align: center; padding-top: 100px;">
-        <h2>Welcome to MyApp</h2>
-        <button class="button button-block button-positive icon-left ion-social-facebook" ua-oauth-link="facebook" style="background: #4c66a4;">
-          <span ng-show="!loading">Log in with Facebook</span>
-          <i ng-show="loading" class="ion-loading-b"></i>
+        <img src="../img/logo.png" style="width:304px;height:148px;">
+
+
+        <button class="button button-assertive">
+          LOGIN
+        </button>
+        <button class="button button-assertive">
+          SIGN UP
         </button>
 
-        <p class="text-center">
-            <a href="#/login">Log in/sign up with your email</a>
-          </p>
+
       </div>
     </ion-content>
   </ion-view>
@@ -18,3 +21,4 @@
     <div class="title">{{ error.message }}</div>
   </div>
 </form>
+</body>

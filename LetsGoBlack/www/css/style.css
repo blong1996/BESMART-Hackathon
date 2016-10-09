@@ -1,9 +1,10 @@
 /* Empty. Add your own CSS if you like bllong@aggies.ncat.edu */
 
 
-.StartBackground {
-    background-image: url("/img/homescreenbackground.jpg");
-    background-color: #cccccc;
-
+.start-background {
+    background-image: url("../img/homescreenbackground.jpg");
+    background-size: cover;
+    background-color: #384729;
+    background-repeat: no-repeat;
 
 }
