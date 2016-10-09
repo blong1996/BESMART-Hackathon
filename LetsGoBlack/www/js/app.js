@@ -112,6 +112,27 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
       }
     })
 
+    // Account setup
+    .state('app.account', {
+      url: '/account',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/account.html',
+          controller: 'TripCtrl'
+        }
+      }
+    })
+
+    // Terms and Privacy Policy setup
+    .state('app.terms-privacy', {
+      url: '/terms-privacy',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/terms-privacy.html',
+          controller: 'TripCtrl'
+        }
+      }
+    })
 
    
 
