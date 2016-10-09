@@ -123,6 +123,16 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
       }
     })
 
+    // Terms and Privacy Policy setup
+    .state('app.terms-privacy', {
+      url: '/terms-privacy',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/terms-privacy.html',
+          controller: 'TripCtrl'
+        }
+      }
+    })
 
    
 
