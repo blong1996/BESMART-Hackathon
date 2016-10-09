@@ -112,6 +112,17 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
       }
     })
 
+    // Account setup
+    .state('app.account', {
+      url: '/account',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/account.html',
+          controller: 'TripCtrl'
+        }
+      }
+    })
+
 
    
 

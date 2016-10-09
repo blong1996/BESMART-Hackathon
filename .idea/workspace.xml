@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78c05b87-a1fb-4ca1-ae75-d3cda8580e4c" name="Default" comment="added css">
+    <list default="true" id="78c05b87-a1fb-4ca1-ae75-d3cda8580e4c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LetsGoBlack/www/templates/startup.html" afterPath="$PROJECT_DIR$/LetsGoBlack/www/templates/startup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LetsGoBlack/www/templates/trip-setup.html" afterPath="$PROJECT_DIR$/LetsGoBlack/www/templates/trip-setup.html" />
     </list>
     <ignored path="BESMART-Hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="startup.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="startup.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/templates/startup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="150">
+              <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#ion-content#0;n#ion-view#0;n#form#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#ion-content#0;n#ion-view#0;n#form#0;n#body#0;n#!!top" expanded="true" />
@@ -36,12 +37,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trip-setup.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="trip-setup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/templates/trip-setup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,8 +52,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -72,6 +75,7 @@
       <list>
         <option value="$PROJECT_DIR$/LetsGoBlack/www/index.html" />
         <option value="$PROJECT_DIR$/LetsGoBlack/www/css/style.css" />
+        <option value="$PROJECT_DIR$/LetsGoBlack/www/templates/trip-setup.html" />
         <option value="$PROJECT_DIR$/LetsGoBlack/www/templates/startup.html" />
       </list>
     </option>
@@ -84,7 +88,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="102" />
+    <option name="x" value="17" />
     <option name="y" value="23" />
     <option name="width" value="1260" />
     <option name="height" value="690" />
@@ -259,6 +263,14 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/js/app.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/js/controllers.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/templates/login.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/templates/selected-trip.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/templates/signup.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/templates/startup.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/templates/trip-setup.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -266,8 +278,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/templates/selected-stop.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/templates/trip-setup.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/templates/menu.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -275,7 +286,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/LetsGoBlack/www/templates/trip-details.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -643,14 +653,21 @@
       <option name="project" value="LOCAL" />
       <updated>1476040630380</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added css">
+      <created>1476041356846</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1476041356846</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="394000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="102" y="23" width="1260" height="690" extended-state="0" />
+    <frame x="17" y="23" width="1260" height="690" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -714,14 +731,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/templates/trip-details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -730,22 +739,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/templates/startup.html">
+    <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ion-content#0;n#ion-view#0;n#form#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#ion-content#0;n#ion-view#0;n#form#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/templates/trip-setup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/templates/startup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ion-content#0;n#ion-view#0;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#ion-content#0;n#ion-view#0;n#form#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
