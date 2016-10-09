@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78c05b87-a1fb-4ca1-ae75-d3cda8580e4c" name="Default" comment="Add UserApp stuff and Controllers and Services">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LetsGoBlack/www/index.html" afterPath="$PROJECT_DIR$/LetsGoBlack/www/index.html" />
-    </list>
+    <list default="true" id="78c05b87-a1fb-4ca1-ae75-d3cda8580e4c" name="Default" comment="Add UserApp stuff and Controllers and Services" />
     <ignored path="BESMART-Hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -273,12 +270,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1476031594495</updated>
-      <workItem from="1476031600240" duration="258000" />
+      <workItem from="1476031600240" duration="394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258000" />
+    <option name="totallyTimeSpent" value="394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="164" y="23" width="955" height="732" extended-state="0" />
