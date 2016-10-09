@@ -1,5 +1,22 @@
-<ion-view view-title="Search">
-  <ion-content>
-    <h1>Search</h1>
+
+  <ion-view view-title="Let's Go Black">
+    <ion-content class="start-background">
+      <div class="padding" style="text-align: center; padding-top: 60%;">
+        <div class="list">
+          <label class="item item-input">
+            <input type="text" placeholder="STARTING LOCATION">
+          </label>
+          <label class="item item-input">
+            <input type="text" placeholder="Last Name">
+          </label>
+          <label class="item item-input">
+            <textarea placeholder="Comments"></textarea>
+          </label>
+        </div>
+      </div>
+
+  <div class="bar bar-footer bar-assertive" ng-show="error">
+    <div class="title">{{ error.message }}</div>
+  </div>
   </ion-content>
-</ion-view>
+  </ion-view>
