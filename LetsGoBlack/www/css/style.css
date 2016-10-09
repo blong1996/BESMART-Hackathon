@@ -1,1 +1,9 @@
 /* Empty. Add your own CSS if you like */
+label {
+color: #B4886B;
+padding: padding-center;
+font-weight: bold;
+width: 350px;
+vertical-align: center;
+}
+
