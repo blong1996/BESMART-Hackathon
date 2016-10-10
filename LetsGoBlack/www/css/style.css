@@ -35,3 +35,7 @@ float: left;
 
   .test2:before {
     content: "2K"; }
+.gray{
+    background-color: #D3D3D3;
+}
+
