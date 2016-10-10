@@ -67,18 +67,10 @@ angular.module('starter.controllers', [])
     function HomeController($scope, $ionicModal, $cordovaFile, $cordovaFileTransfer, $cordovaCamera){
 
         var me = this;
-        me.current_image = 'img/koro-sensei.png';
+        me.current_image = 'IMG_1261.JPG';
         me.image_description = '';
-        me.detection_type = 'LABEL_DETECTION';
 
-        me.detection_types = {
-          LABEL_DETECTION: 'label',
-          TEXT_DETECTION: 'text',
-          LOGO_DETECTION: 'logo',
-          LANDMARK_DETECTION: 'landmark'
-        };
-
-        var api_key = 'your-google-api-key';
+        var api_key = '5ea0ede9-1dfa-418b-941d-d7466e62e9ab';
 
 
         $scope.takePicture = function(){
@@ -130,7 +122,7 @@ angular.module('starter.controllers', [])
 
                     options.headers = headers;
 
-                    var server = 'https://vision.googleapis.com/v1/images:annotate?key=' + api_key;
+                    var server = 'http://app1.idware.net/DriverLicenseParser.svc' + api_key;
                     var filePath = cordova.file.applicationStorageDirectory + 'file.json';
 
                     $cordovaFileTransfer.upload(server, filePath, options, true)
