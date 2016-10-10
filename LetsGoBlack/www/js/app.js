@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.services', 'ngCordova'])
 
 .run(function($ionicPlatform, user) {
   // Initiate the user service with your UserApp App Id
@@ -134,10 +134,12 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
       }
     })
 
-   
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/trip-setup');
 
 });
+
+
 
