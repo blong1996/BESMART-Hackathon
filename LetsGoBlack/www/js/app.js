@@ -26,6 +26,10 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
   });
 })
 
+<script type="text/javascript">// <![CDATA[
+document.addEventListener("deviceready", deviceReady, true); function deviceReady() { var plot = cordova.require("cordova/plugin/plot"); plot.init(); }
+// ]]></script>
+
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
