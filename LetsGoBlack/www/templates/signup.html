@@ -8,44 +8,44 @@
     <br>
     <br>
       <div class="list list-inset">
-        <label class="item item-input">
-          <span class="input-label">First Name</span>
-          <input  id="fname" type="text" name="first_name" value="{{  home_ctrl.firstname }}">
-        </label>
-
-        <label class="item item-input">
-          <span class="input-label">Last Name</span>
-          <input id="lname" type="text" name="last_name" value="{{  home_ctrl.lastname }}">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Email</span>
-          <input type="text" name="login" ua-is-email>
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" name="password">
-        </label>
+          <label class="item item-input">
+                <span class="input-label">First Name</span>
+               <input  id="fname" type="text" name="first_name" value="{{  home_ctrl.firstname }}">
+          </label>
+          <label class="item item-input">
+                <span class="input-label">Last Name</span>
+                <input id="lname" type="text" name="last_name" value="{{  home_ctrl.lastname }}">
+          </label>
+          <label class="item item-input">
+                <span class="input-label">Email</span>
+               <input type="text" name="login" ua-is-email>
+          </label>
+          <label class="item item-input">
+               <span class="input-label">Password</span>
+                <input type="password" name="password">
+          </label>
+      </div>
        <div class="padding">
 
 
         <input type="file"    id="profile-img"class="custom-file-input"accept="image/*"  />
-    <img src="" id="profile-img-tag" width="200px" />
+         <img src="" id="profile-img-tag" width="200px" />
 
-<script type="text/javascript">
-    function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            
-            reader.onload = function (e) {
-                $('#profile-img-tag').attr('src', e.target.result);
+        <script type="text/javascript">
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    
+                    reader.onload = function (e) {
+                        $('#profile-img-tag').attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
             }
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-    $("#profile-img").change(function(){
-        readURL(this);
-    });
-</script>
+            $("#profile-img").change(function(){
+                readURL(this);
+            });
+        </script>
 
       </div>
        <div class="padding">
@@ -61,5 +61,7 @@
   <div class="bar bar-footer bar-assertive" ng-show="error">
     <div class="title">{{ error.message }}</div>
   </div>
-</form></ion-nav-bar>
+</form>
+
+</ion-nav-bar>
 
