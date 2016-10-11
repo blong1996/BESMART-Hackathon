@@ -1,12 +1,11 @@
-<body class="start-background">
-<form ua-login>
+
   <ion-view view-title="Your Trip">
     <ion-content class="start-background">
       <div class="padding" style="text-align: center; padding-top: 5%;">
         <div class="card">
           <div class="item item-text-wrap">
-            <div class="row">
-              <div class="col">
+            <div class="">
+              <div class="col" style="width: 100%">
                 <img src="img/logo.png" style="width:200px;height:100px;">
 
                 <div class="col gray">
@@ -20,33 +19,29 @@
           </div>
         </div>
       </div>
+      <div class="padding">
+            <div >
+              <a class="item item-thumbnail-left" href="#/app/selected-stop">
+                <img class="image" src="img/moad.jpg" alt="" />
+                <h2>Museum of the African Dispora</h2>
+                <p>685 Mission St San Francisco, CA 94105</p>
+              </a>
+            </div>
+            <div>
+              <a class="item item-thumbnail-left" href="#">
+                <img class="image" src="img/mlk.jpg" alt="" />
+                <h2>Dr. Martin Luther King Jr. Memorial</h2>
+                <p>750 Howard St San Francisco, CA 94103</p>
+              </a>
+            </div>
+            <div>
+              <a class="item item-thumbnail-left" href="#">
+                <img class="image" src="img/coltrane.jpg" alt="" />
+                <h2>Saint John Coltraine African American Church</h2>
+                <p>1286 Fillmore St San Francisco, CA 94115</p>
+              </a>
+            </div>
       <div>
-        <a class="item item-thumbnail-left" href="#">
-          <img class="image" src="img/moad.jpg" alt="" />
-          <h2>Museum of the African Dispora</h2>
-          <p>685 Mission St San Francisco, CA 94105</p>
-        </a>
-      </div>
-      <div>
-        <a class="item item-thumbnail-left" href="#">
-          <img class="image" src="img/mlk.jpg" alt="" />
-          <h2>Dr. Martin Luther King Jr. Memorial</h2>
-          <p>750 Howard St San Francisco, CA 94103</p>
-        </a>
-      </div>
-      <div>
-        <a class="item item-thumbnail-left" href="#">
-          <img class="image" src="img/coltrane.jpg" alt="" />
-          <h2>Saint John Coltraine African American Church</h2>
-          <p>1286 Fillmore St San Francisco, CA 94115</p>
-        </a>
-      </div>
-
 
     </ion-content>
   </ion-view>
-  <div class="bar bar-footer bar-assertive" ng-show="error">
-    <div class="title">{{ error.message }}</div>
-  </div>
-</form>
-</body>
