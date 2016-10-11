@@ -79,6 +79,18 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
       }
     })
 
+
+    // Add Business
+    .state('app.add-business', {
+      url: '/add-business',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/add-business.html',
+          controller: 'TripCtrl'
+        }
+      }
+    })
+
     // Selected Trip
     .state('app.selected-trip', {
       url: '/selected-trip',
