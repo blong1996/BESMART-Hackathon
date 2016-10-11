@@ -3,65 +3,66 @@
         Back
       </ion-nav-back-button>
     <form ua-signup>
-  <ion-view title="Sign Up" ng-controller="HomeController as home_ctrl">
-    <ion-content>
-    <br>
-    <br>
-      <div class="list list-inset">
-          <label class="item item-input">
-                <span class="input-label">First Name</span>
-               <input  id="fname" type="text" name="first_name" value="{{  home_ctrl.firstname }}">
-          </label>
-          <label class="item item-input">
-                <span class="input-label">Last Name</span>
-                <input id="lname" type="text" name="last_name" value="{{  home_ctrl.lastname }}">
-          </label>
-          <label class="item item-input">
-                <span class="input-label">Email</span>
-               <input type="text" name="login" ua-is-email>
-          </label>
-          <label class="item item-input">
-               <span class="input-label">Password</span>
-                <input type="password" name="password">
-          </label>
-      </div>
-       <div class="padding">
+
+        <ion-view title="Sign Up">
+          <ion-content>
+          <div class="padding" style="text-align: left; padding-top: 10%;">
+                <div class="list list-inset">
+                    <label class="item item-input">
+                          <span class="input-label">First Name</span>
+                         <input  id="fname" type="text" name="first_name" value="{{  firstname }}">
+                    </label>
+                    <label class="item item-input">
+                          <span class="input-label">Last Name</span>
+                          <input id="lname" type="text" name="last_name" value="{{  lastname }}">
+                    </label>
+                    <label class="item item-input">
+                          <span class="input-label">Email</span>
+                         <input type="text" name="login" ua-is-email>
+                    </label>
+                    <label class="item item-input">
+                         <span class="input-label">Password</span>
+                          <input type="password" name="password">
+                    </label>
+                </div>
+                 <div class="padding">
 
 
-        <input type="file"    id="profile-img"class="custom-file-input"accept="image/*"  />
-         <img src="" id="profile-img-tag" width="200px" />
+                  <input type="file"    id="profile-img"class="custom-file-input"accept="image/*"  />
+                   <img src="" id="profile-img-tag" width="200px" />
 
-        <script type="text/javascript">
-            function readURL(input) {
-                if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-                    
-                    reader.onload = function (e) {
-                        $('#profile-img-tag').attr('src', e.target.result);
-                    }
-                    reader.readAsDataURL(input.files[0]);
-                }
-            }
-            $("#profile-img").change(function(){
-                readURL(this);
-            });
-        </script>
+                  <script type="text/javascript">
+                      function readURL(input) {
+                          if (input.files && input.files[0]) {
+                              var reader = new FileReader();
+                              
+                              reader.onload = function (e) {
+                                  $('#profile-img-tag').attr('src', e.target.result);
+                              }
+                              reader.readAsDataURL(input.files[0]);
+                          }
+                      }
+                      $("#profile-img").change(function(){
+                          readURL(this);
+                      });
+                  </script>
 
-      </div>
-       <div class="padding">
-      <p class="button button-block button-positive " ng-click="testFunct()">Extract Data</p>
-    </div>
-      <div class="padding">
-        <button class="button button-block button-positive ng-cl" >Create My Account</button>
-          <span ng-show="!loading"></span>
-          <i ng-show="loading" class="ion-loading-b"></i>
-      </div>
-    </ion-content>
-  </ion-view>
-  <div class="bar bar-footer bar-assertive" ng-show="error">
-    <div class="title">{{ error.message }}</div>
-  </div>
-</form>
+                </div>
+              <div class="padding">
+                  <p class="button button-block button-assertive " ng-click="testFunct()">Extract Data</p>
+              </div>
+              <div class="padding">
+                    <button class="button button-block button-assertive ng-cl" >Create My Account</button>
+                      <span ng-show="!loading"></span>
+                      <i ng-show="loading" class="ion-loading-b"></i>
+              </div>
+            </div>
+          </ion-content>
+        </ion-view>
+       <div class="bar bar-footer bar-assertive" ng-show="error">
+                <div class="title">{{ error.message }}</div>
+              </div>
+  </form>
 
 </ion-nav-bar>
 

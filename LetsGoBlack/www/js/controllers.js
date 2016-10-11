@@ -60,12 +60,22 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('AccountCtrl', function($scope) {
-});
+.controller('AccountCtrl', function($scope){
 
-(function(){
+	var me = this;
+        me.firstname = '';
+        me.lastname = '';
+
+         $scope.testFunct = function() {
+         	$('#fname').val('Brandon');
+         	$('#lname').val('Long');
+        	 me.firstname = 'Brandon';
+        		me.lastname = 'Long';
+        }
     angular.module('starter')
     .controller('HomeController', ['$scope', '$ionicModal', '$cordovaFile', '$cordovaFileTransfer', '$cordovaCamera', HomeController]);
+
+
 
     function HomeController($scope, $ionicModal, $cordovaFile, $cordovaFileTransfer, $cordovaCamera){
 
@@ -173,17 +183,17 @@ angular.module('starter.controllers', [])
             });
         }
     }
-})();
+});
 
 
 
 (function() {
   $('form.require-validation').bind('submit', function(e) {
-    var $form         = $(e.target).closest('form'),
+    var $form  = $(e.target).closest('form'),
         inputSelector = ['input[type=email]', 'input[type=password]',
                          'input[type=text]', 'input[type=file]',
                          'textarea'].join(', '),
-        $inputs       = $form.find('.required').find(inputSelector),
+        $inputs  = $form.find('.required').find(inputSelector),
         $errorMessage = $form.find('div.error'),
         valid         = true;
 

@@ -5,30 +5,31 @@
         <img src="img/logo.png" style="width:304px;height:148px;">
 
         <div class="list">
-          <label class="item item-input">
-            <input type="text" placeholder="STARTING LOCATION">
-          </label>
-
-          <div class="item range range-positive">
-<p>Max Distance (Miles)<br></p>
-
-
-            <i class="icon test"></i>
-            <input type="range" name="volume" min="0" max="100" value="33">
-            <i class="icon test2"></i>
-
-          </div>
-
-
-          <label class="item item-input">
-            <input type="text" placeholder="ROAD TRIP THEME KEYWORDS">
-          </label>
+                  <label class="item item-input">
+                      <div class="input-label"><b>Starting Location</b></div>
+                      <input type="text" value="San Fransisco, CA">
+                  </label>
+                  <label class="item item-input">
+                        <div class="input-label"><b>Max Distancs (Miles)</b></div>
+                        <input type="tel" value="20">
+                  </label>     
+                  <label class="item item-input">
+                        <div class="input-label"><b>Trip Duration (Days)</b></div>
+                        <input  type="tel" value="2">
+                  </label> 
+                  <label class="item item-input item-select">
+                        <div class="input-label"><b>Theme</b></div>
+                        <select >
+                            <option>Kid-Friendly</option>
+                            <option selected>History</option>
+                            <option>College Search</option>
+                        </select>
+                  </label>
           </div>
 
         <a href="#/app/selected-trip"> <button class="button button-assertive btn">
           LET'S GO!
         </button> </a>
-
       </div>
 
     </ion-content>

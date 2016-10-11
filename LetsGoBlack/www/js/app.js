@@ -65,6 +65,7 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
     .state('signup', {
       url: '/signup',
       templateUrl: 'templates/signup.html',
+      controller:'AccountCtrl',
       data: {
         public: true
       }
