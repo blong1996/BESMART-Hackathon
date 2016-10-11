@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="78c05b87-a1fb-4ca1-ae75-d3cda8580e4c" name="Default" comment="added plot projects">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LetsGoBlack/www/templates/signup.html" afterPath="$PROJECT_DIR$/LetsGoBlack/www/templates/signup.html" />
     </list>
     <ignored path="BESMART-Hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="signup.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/templates/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="90">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -767,7 +766,7 @@
       <option name="presentableId" value="Default" />
       <updated>1476031594495</updated>
       <workItem from="1476031600240" duration="394000" />
-      <workItem from="1476151502538" duration="661000" />
+      <workItem from="1476151502538" duration="1429000" />
     </task>
     <task id="LOCAL-00001" summary="added css">
       <created>1476037133981</created>
@@ -843,11 +842,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1055000" />
+    <option name="totallyTimeSpent" value="1823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="23" width="1260" height="751" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1081,8 +1080,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LetsGoBlack/www/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
         </state>
       </provider>
