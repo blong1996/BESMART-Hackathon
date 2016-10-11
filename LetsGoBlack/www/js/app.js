@@ -23,8 +23,17 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
+
+    document.addEventListener("deviceready", deviceReady, true);
+    function deviceReady() { var plot = cordova.require("cordova/plugin/plot");
+    plot.init()};
+
+
   });
 })
+
+
 
 .config(function($stateProvider, $urlRouterProvider) {
 
