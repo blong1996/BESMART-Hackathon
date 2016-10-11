@@ -11,13 +11,17 @@
                       <input type="text" name="description">
                     </label>
               </div>
-<div class="stripe-button-container">
-  <script src="https://checkout.stripe.com/checkout.js"
- class="stripe-button active" data-key="pk_test_lpCLUHZdjnkcmeERHjueQUbh" data-amount="1599" data-name="Demo Site" data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto" data-notrack="">
-  </script><button type="submit" class="stripe-button-el" style="visibility: visible;"><span style="display: block; min-height: 30px;">Pay with Card</span></button>
-
-  </div>
-              </form>
+              <form action="/your-server-side-code" method="POST">
+                  <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_IpCLUHZdjnKcmeERHjueQUbh"
+                    data-amount="999"
+                    data-name="Demo Site"
+                    data-description="Widget"
+                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-locale="auto">
+                  </script>
+                </form>
           <!--<button type="submit" class="button button-block button-positive">-->
           <!--<i ng-show="loading" class="ion-loading-b"> Add Business</i>-->
           <!--</button>-->

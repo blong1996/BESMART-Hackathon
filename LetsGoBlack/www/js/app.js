@@ -112,6 +112,37 @@ angular.module('starter', ['ionic', 'UserApp', 'starter.controllers', 'starter.s
       }
     })
 
+    .state('app.mlk-stop', {
+      url: '/mlk-stop',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/mlk-stop.html',
+          controller: 'TripCtrl'
+        }
+      }
+    })
+    .state('app.saint-stop', {
+      url: '/saint-stop',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/saint-stop.html',
+          controller: 'TripCtrl'
+        }
+      }
+    })
+
+    .state('app.museum-stop', {
+      url: '/museum-stop',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/museum-stop.html',
+          controller: 'TripCtrl'
+        }
+      }
+    })
+
+
+
     // Selected Stop
     .state('app.selected-stop', {
       url: '/selected-stop',
