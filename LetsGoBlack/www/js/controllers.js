@@ -69,14 +69,39 @@ angular.module('starter.controllers', [])
 
     function HomeController($scope, $ionicModal, $cordovaFile, $cordovaFileTransfer, $cordovaCamera){
 
+
         var me = this;
+        me.firstname = '';
+        me.lastname = '';
         me.current_image = 'img/IMG_1261.JPG';
         me.image_description = '';
 
         var api_key = '5ea0ede9-1dfa-418b-941d-d7466e62e9ab';
 
+        $scope.testFunct = function() {
+        	 me.firstname = 'Brandon';
+        		me.lastname = 'Long';
+        }
+
+       $scope.readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            console.log("READURL");
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
 
         $scope.takePicture = function(){
+
 
             var options = {
                 destinationType: Camera.DestinationType.DATA_URL,
@@ -89,7 +114,8 @@ angular.module('starter.controllers', [])
             };
 
             $cordovaCamera.getPicture(options).then(function(imagedata){
-
+            	me.firstname = 'Brandon';
+        		me.lastname = 'Long';
                 me.current_image = "data:image/jpeg;base64," + imagedata;
                 me.image_description = '';
                 me.locale = '';
@@ -130,7 +156,7 @@ angular.module('starter.controllers', [])
 
                     $cordovaFileTransfer.upload(server, filePath, options, true)
                         .then(function(result){
-
+                        	
                             var res = JSON.parse(result.response);
                             var key = me.detection_types[me.detection_type] + 'Annotations';
 

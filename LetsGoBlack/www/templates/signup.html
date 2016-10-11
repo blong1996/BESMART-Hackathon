@@ -5,10 +5,17 @@
     <form ua-signup>
   <ion-view title="Sign Up" ng-controller="HomeController as home_ctrl">
     <ion-content>
+    <br>
+    <br>
       <div class="list list-inset">
         <label class="item item-input">
-          <span class="input-label">Name</span>
-          <input type="text" name="first_name">
+          <span class="input-label">First Name</span>
+          <input  id="fname" type="text" name="first_name" value="{{  home_ctrl.firstname }}">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Last Name</span>
+          <input id="lname" type="text" name="last_name" value="{{  home_ctrl.lastname }}">
         </label>
         <label class="item item-input">
           <span class="input-label">Email</span>
@@ -18,14 +25,36 @@
           <span class="input-label">Password</span>
           <input type="password" name="password">
         </label>
-       <div> <input type="file" accept="image/*"> </div>
-        <img src="{{ home_ctrl.current_image }}" class="picture">
+       <div class="padding">
+
+
+        <input type="file"    id="profile-img"class="custom-file-input"accept="image/*"  />
+    <img src="" id="profile-img-tag" width="200px" />
+
+<script type="text/javascript">
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#profile-img-tag').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#profile-img").change(function(){
+        readURL(this);
+    });
+</script>
+
       </div>
+       <div class="padding">
+      <p class="button button-block button-positive " ng-click="testFunct()">Extract Data</p>
+    </div>
       <div class="padding">
-        <button class="button button-block button-positive ng-cl" ng-click="takePicture">Create My Account</button>
+        <button class="button button-block button-positive ng-cl" >Create My Account</button>
           <span ng-show="!loading"></span>
           <i ng-show="loading" class="ion-loading-b"></i>
-        </button>
       </div>
     </ion-content>
   </ion-view>
