@@ -70,7 +70,7 @@ angular.module('starter.controllers', [])
     function HomeController($scope, $ionicModal, $cordovaFile, $cordovaFileTransfer, $cordovaCamera){
 
         var me = this;
-        me.current_image = 'IMG_1261.JPG';
+        me.current_image = 'img/IMG_1261.JPG';
         me.image_description = '';
 
         var api_key = '5ea0ede9-1dfa-418b-941d-d7466e62e9ab';
