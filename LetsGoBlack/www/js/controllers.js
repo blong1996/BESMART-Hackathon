@@ -45,7 +45,7 @@ angular.module('starter.controllers', [])
 .controller('LoginCtrl', function($scope) {
 
 
-	
+
 })
 
 .controller('ProfileCtrl', function($scope) {
@@ -171,6 +171,7 @@ angular.module('starter.controllers', [])
     });
   });
 });
+/*
 
 (function() {
   var $form = $("#payment-form");
@@ -203,4 +204,4 @@ angular.module('starter.controllers', [])
       $form.get(0).submit();
     }
   }
-})
+});*/
