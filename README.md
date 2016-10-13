@@ -5,8 +5,11 @@
 ## Team Members:
 
 Brandon Long, Junior Computer Science Student NCATSU
+
 Angelica Willis, Senior Computer Science Student NCATSU
+
 Ashana Evans, Senior Computer Science & Applied Math. Student NCATSU
+
 Olivier Beya, Senior Computer Science Student NCATSU
 
 ## The Hackathon:
@@ -31,4 +34,4 @@ To view the winning presentation we did check it out here at 12:00:
 To view the announcement made when we won:
 [Winner Announcement](http://library.fora.tv/2016/10/11/be_smart_hackathon_winner_announcement)
 
-[View our slide deck](https://drive.google.com/drive/folders/0B4DPAPUB_IYBY1Y1MzVCbVI1cGs?usp=sharing)
+[View our slide deck](https://docs.google.com/presentation/d/1sne53iBqVBQp-NJ_mWQZ04Z8fCjInCbxd5V-HIGIbqg/edit?usp=sharing)
