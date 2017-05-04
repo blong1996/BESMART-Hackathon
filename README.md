@@ -1,6 +1,6 @@
 # BESMART-Hackathon Submission: Let's Go Black! by Aggie++
 
-![alt text] (https://github.com/blong1996/BESMART-Hackathon/blob/master/LetsGoBlack/www/img/logo.png "Logo")
+![alt text](/LetsGoBlack/www/img/logo.png "Logo")
 
 ## Team Members:
 
